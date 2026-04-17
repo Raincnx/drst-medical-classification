@@ -1,0 +1,24 @@
+seed: 42
+
+dataset:
+  image_size: 224
+  num_classes: 7
+  num_workers: 4
+
+model:
+  pretrained: true
+  freeze_backbone: false
+
+training:
+  epochs: 10
+  batch_size: 32
+  lr: 0.0003
+  weight_decay: 0.0001
+  print_every: 20
+  confidence_threshold: 0.0
+
+paths:
+  checkpoint_dir: outputs/checkpoints
+  log_dir: outputs/logs
+  plot_dir: outputs/plots
+  table_dir: outputs/tables
